@@ -1,0 +1,9 @@
+def time_since_epoch(): #How long since the epoch in GMT
+    t = time.time()
+    days = t//(60*60*24)
+    left = t - days*60*60*24
+    hour = left//(60*60)
+    lef2 = left - (hour*60*60)
+    mins = lef2//60
+    secs = lef2 - (mins*60)
+    print(days,' days, ',hour,' hours ', mins, ' minutes ', secs, ' seconds')
