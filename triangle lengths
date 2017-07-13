@@ -1,0 +1,6 @@
+def is_triangle(a, b, c):
+    avh = (a+b+c)/2
+    if a>avh or b>avh or c>avh:
+        print('yes')
+    else:
+        print('no')
