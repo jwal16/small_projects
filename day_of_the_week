@@ -1,0 +1,6 @@
+import calendar
+day = {0:'MONDAY', 1:'TUESDAY', 2:'WEDNESDAY', 3:'THURSDAY',4:'FRIDAY', 5:'SATURDAY', 6:'SUNDAY'}
+date = input().split()
+days = [int(i) for i in date]
+value = calendar.weekday(days[2],days[0],days[1])
+print(day[value])
