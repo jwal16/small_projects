@@ -1,0 +1,10 @@
+def adjacentElementsProduct(inputArray):
+    n = len(inputArray)
+    z = 0
+    new = []
+    ia = inputArray
+    for i in range(n-1):
+        new.append(ia[z]*ia[z+1])
+        z = z + 1
+    return(max(new))
+        
