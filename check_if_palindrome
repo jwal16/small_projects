@@ -1,0 +1,11 @@
+def checkPalindrome(inputString):
+    n = len(inputString)
+    zz = list(inputString)
+    for i in range(n):
+        if (len(zz)==0) or (len(zz)==1):
+            return(True)
+        elif zz[0] == zz[-1]:
+            del zz[-1]
+            del zz[0]
+        else:
+            return(False)
